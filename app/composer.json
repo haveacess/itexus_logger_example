@@ -1,0 +1,10 @@
+{
+  "require": {
+    "php": ">=8.1",
+    "haveacess/itexus_logger": "dev-dev"
+  },
+  "autoload": {
+    "psr-4": {"SimpleStore\\": "."}
+  },
+  "minimum-stability": "dev"
+}

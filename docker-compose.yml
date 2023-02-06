@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  php:
+    build: ./containers/php
+    volumes:
+      - ${CODE_FOLDER}:/var/www/html
+    command: sh -c "composer install && php-fpm"
+    environment:
+      - LUMI_LOG_FOLDER
+      - LUMI_LOG_LEVEL
+      - LUMI_MAX_FILE_ROWS
